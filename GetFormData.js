@@ -8,8 +8,8 @@ function GetFormData() {
             let dataOutput = new Array();
             dataOutput.push(formID);
             for (let input of inputs) {
-                var attributeName = input.getAttribute("name");
-                var fieldValue = input.value;
+                let attributeName = input.getAttribute("name");
+                let fieldValue = input.value;
                 dataOutput.push(attributeName + ": " + fieldValue);
             }
             console.log(dataOutput);
